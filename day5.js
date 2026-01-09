@@ -1,5 +1,5 @@
 
-                       //Promises and handling Promise-based methods
+//                        //Promises  
 // let myPromise = new Promise((resolve, reject)=>{
 //   let success = true;
 //   if (success) {
@@ -8,21 +8,19 @@
 //     reject("Something went wrong");
 //   }
 // });
-// myPromise
-// .then(result => {
-//   console.log(result);
-// })
 
-
-
-
-
-
-
-
-                       //Fetch API (using a public API like Weather or PokeAPI)
-         
-                //PokeAPI       
+//                      //handling(.then/.catch)
+//  myPromise 
+//  .then((result)=> {
+//   console.log(result)
+//  })
+//  .catch((error)=> {
+//    console.log(error)
+//  });
+                     
+    
+                    //Fetch API (using a public API like Weather or PokeAPI)
+                
 // fetch("https://pokeapi.co/api/v2/pokemon/pikachu")
 // .then((response) => response.json())
 // .then((data)=> {
@@ -34,21 +32,18 @@
 //   console.log("Error fetching data:", error);
 // });
 
-                //WeatherAPI
-// fetch("https://api.open-meteo.com/v1/forecast?latitude=51.5072&longitude=0.1276&current_weather=true")
-// .then((res)=>res.json())
-// .then((data)=> {
-//     console.log("Temperature:", data.current_weather.temperature, "°C");
-//     console.log("Windspeed:", data.current_weather.windspeed, "km/h");
-// })
-// .catch((err)=>console.error("Error:", err));
+
+                         //(async/await)
+// async function run() {
+//   let data = await Promise.resolve("Helloo")
+//   console.log(data);
+// }
+// run();
 
 
-
-
-
-
-
-
-
+// async function one() {
+//   let numb = await Promise.resolve("first")
+//   console.log(numb);
+// }
+// one();
 

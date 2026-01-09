@@ -30,6 +30,11 @@
 // }                         
              
 
+// try {
+//        throw Error("Hello");
+// }catch(e) {
+//        console.log(e.message)
+// }
 
                  //Shadowing & Illegal Shadowing
           //Shadowing

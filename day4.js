@@ -21,6 +21,16 @@
 // let p1 = new fullstack("sulthana");
 // console.log(p1.name);
 
+
+// class Person  {
+//     constructor(name) {
+//         this.name = name;
+//     }
+// }
+// let p1 = new Person("Fathima");
+// console.log(p1.name);
+
+
             //this
 // class person {
 //   constructor(name){
@@ -29,6 +39,16 @@
 // }
 // let p1 = new person("sulthana");
 // console.log(p1.name)
+
+
+// let Person = {
+//     name: "Fathima",
+//     sayHi: function() {
+//         console.log("Hello " + this.name)
+//     }
+// }
+// Person.sayHi();
+
 
                                  //Generator Functions (function*)
 // function* generator() {
@@ -42,13 +62,20 @@
 // console.log(gen.next());
 // console.log(gen.next());
 
-                              //Currying examples
+                              //Currying 
 // function add(a){
 //   return function(b){
 //     return a+b;
 //   };
 // };
 // console.log(add(1)(7));
+
+
+// function add(a, b, c) {
+//     return a + b + c;
+// }
+// console.log(add(10, 20, 30));
+
 
                               //Call back function
 // function greet(name,callback) {
@@ -58,3 +85,12 @@
 // greet("sulthana", function(){
 //   console.log("How are you")
 // });  
+
+
+// function greet(name, callback) {
+//     callback(name);
+// }
+// greet("Fathima", (n)=> {
+//     console.log("Hello ", n)
+// });
+

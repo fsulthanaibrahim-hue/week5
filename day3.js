@@ -1,4 +1,4 @@
-   //Stack overflow & Stack underflow
+                                  //Stack overflow & Stack underflow
           //stack overflow
 // function greet() {
 //   greet();
@@ -11,6 +11,9 @@
 // stack.push(300);
 // console.log(stack.pop());
 // console.log(stack.pop());
+// console.log(stack.pop());
+
+// let stack = [];
 // console.log(stack.pop());
 
                              //Objects & Classes
@@ -27,6 +30,16 @@
 // console.log(car.brand);
 // // car.start();
 
+
+// let Person = {
+//    name: "Fathima",
+//    greet: function() {
+//       console.log(`Hello ${this.name}`)
+//    }
+// };
+// Person.greet();
+
+
             //Classes
 // class Car {
 //   constructor(brand, model) {
@@ -41,6 +54,19 @@
 // car1.start();
 
 
+// class Person {
+//    constructor(name) {
+//       this.name = name;
+//    }
+//    greet() {
+//       console.log(`Hii ${this.name}`)
+//    }
+// }
+// let p1 = new Person("Fathimaa");
+// p1.greet();
+
+
+
                          //Shallow Copy
 // let original = {
 //   name: "Anu",
@@ -52,12 +78,20 @@
 // console.log(original);
 
 
+// let arr = [1, 2, 3, 4];
+// let shallow = arr;
+// shallow.push(5, 6);
+// console.log("Original : ", arr);
+// console.log("Shallow : ", shallow);
+
+
 // let fruits = {
 //   name: "Apple",
 //   color: ["Red", "Green"]
 // };
 // let shallowCopy = {...fruits };
 // console.log(fruits);
+
 
                         //Deep Copy
 // let original = {
@@ -78,6 +112,12 @@
 // console.log(vegetable);
 
 
+// let arr = [1, 2, 3, 4];
+// let deep = [...arr];
+// deep.push(5, 6);
+// console.log("Original : ", arr);
+// console.log("Deep : ", deep);
+
                             //Instances and Prototypes
           //Instances
 // class Car {
@@ -88,6 +128,16 @@
 // let car = new Car ("BMW");
 // console.log(car);
 
+
+// class Person {
+//    constructor(name) {
+//       this.name = name;
+//    }
+// }
+// let p1 = new Person("Fathima");
+// console.log(p1.name);
+
+
          //Prototypes
 // function person(name) {
 //   this.name = name;
@@ -96,6 +146,15 @@
 // };
 // let p = new person ("Ali");
 // p.sayHello();
+
+
+// function Car(brand) {
+//    this.brand = brand;
+// }
+// Car.prototype.Wheels = 4;
+// let Car1 = new Car("Toyota");
+// console.log(Car1.brand);
+
  
                                //Memoization
 // let cache = {};

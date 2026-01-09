@@ -33,7 +33,7 @@
 //   console.log("Start1");
 // },2000);
 // console.log("End");
-
+ 
 // console.log("Good Morning");
 // setTimeout(() => {
 //   console.log("Good Night");
@@ -49,6 +49,11 @@
 // }
 // greet();
                
+    // var name = "Fathima";
+    // function sayHi() {
+    //     console.log("Hello " + name)
+    // }
+    // sayHi();
 
 
                //Strict Mode ('use strict')
